@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" stylesheets="@resources/css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MaksuVahvistuskontrolleri">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="maksuMaara" alignment="CENTER" contentDisplay="CENTER" layoutY="29.0" prefHeight="68.0" prefWidth="600.0" styleClass="text" stylesheets="@resources/css/font.css" text="- 12.00 EUR" textAlignment="CENTER" textFill="#ebecf0">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="maksuNimi" alignment="CENTER" contentDisplay="CENTER" layoutX="179.0" layoutY="86.0" prefHeight="30.0" prefWidth="242.0" styleClass="text" stylesheets="@resources/css/font.css" text="Matti Meikäläinen" textAlignment="CENTER" textFill="#ebecf0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="maksuPvm" alignment="CENTER" contentDisplay="CENTER" layoutX="221.0" layoutY="112.0" prefHeight="30.0" prefWidth="159.0" styleClass="text" stylesheets="@resources/css/font.css" text="22/01/2022" textAlignment="CENTER" textFill="#ebecf0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="maksuViesti" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="221.0" layoutY="164.0" prefHeight="120.0" prefWidth="159.0" styleClass="text" stylesheets="@resources/css/font.css" text="&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&quot;" textAlignment="CENTER" textFill="#ebecf0" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="maksuViite" alignment="CENTER" contentDisplay="CENTER" layoutX="146.0" layoutY="134.0" prefHeight="30.0" prefWidth="308.0" styleClass="text" stylesheets="@resources/css/font.css" text="Viitenro" textAlignment="CENTER" textFill="#ebecf0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="161.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="126.0" layoutY="10.0" prefHeight="58.0" prefWidth="348.0" styleClass="text" stylesheets="@resources/css/font.css" text="%mVahOtsikkoLabel" textAlignment="CENTER" textFill="#ebecf0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="takaisinBtn" layoutX="547.0" layoutY="24.0" onMouseClicked="#palaaTakaisin" styleClass="text" stylesheets="@resources/css/font.css" text="🞬" textFill="#ebecf0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="265.0" layoutY="103.0" prefHeight="60.0" prefWidth="70.0" style="-fx-border-color: #ebecf0; -fx-border-insets: 1; -fx-border-radius: 100; -fx-border-width: 5;" text="✓" textAlignment="CENTER" textFill="#ebecf0">
+               <font>
+                  <Font size="40.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

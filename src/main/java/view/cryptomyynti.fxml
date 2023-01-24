@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" stylesheets="@resources/css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CryptoMyyntikontrolleri">
+   <top>
+      <AnchorPane prefHeight="76.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="153.0" layoutY="21.0" prefHeight="35.0" prefWidth="294.0" styleClass="text" stylesheets="@resources/css/font.css" text="%kryMyyntiOtsikkoLabel" textAlignment="CENTER" textFill="#ebecf0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="takaisinBtn" layoutX="30.0" layoutY="24.0" onMouseClicked="#palaaTakaisin" styleClass="text" stylesheets="@resources/css/font.css" text="❮" textFill="#ebecf0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="175.0" layoutY="143.0" prefHeight="44.0" prefWidth="135.0" styleClass="text" stylesheets="@resources/css/font.css" text="%kryMyyntiMaaraLabel" textFill="#ebecf0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="maaraTxt" layoutX="320.0" layoutY="146.0" prefHeight="37.0" prefWidth="100.0" promptText="%kryMyyntiMaaraHolder" styleClass="text" stylesheets="@resources/css/font.css">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="175.0" layoutY="203.0" prefHeight="44.0" prefWidth="135.0" styleClass="text" stylesheets="@resources/css/font.css" text="%kryMyyntiMyyLabel" textFill="#ebecf0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Slider fx:id="myyntiBtn" layoutX="352.0" layoutY="217.0" nodeOrientation="LEFT_TO_RIGHT" onMouseReleased="#myynti" prefHeight="19.0" prefWidth="42.0" style="-fx-scale-x: 2.5; -fx-scale-y: 2.5;" />
+            <ChoiceBox fx:id="valuuttaBox" layoutX="320.0" layoutY="79.0" prefHeight="37.0" prefWidth="67.0" styleClass="text" stylesheets="@resources/css/font.css" />
+            <Label layoutX="175.0" layoutY="76.0" prefHeight="44.0" prefWidth="135.0" styleClass="text" stylesheets="@resources/css/font.css" text="%kryMyyntiValitseLabel" textFill="#ebecf0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

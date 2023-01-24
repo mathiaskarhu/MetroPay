@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" stylesheets="@resources/css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Maksukontrolleri">
+   <top>
+      <AnchorPane prefHeight="76.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="163.0" layoutY="21.0" prefHeight="35.0" prefWidth="275.0" styleClass="text" stylesheets="@resources/css/font.css" text="%makOtsikkoLabel" textAlignment="CENTER" textFill="#ebecf0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="takaisinBtn" layoutX="30.0" layoutY="24.0" onMouseClicked="#palaaTakaisin" styleClass="text" stylesheets="@resources/css/font.css" text="❮" textFill="#ebecf0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="maksupohjaBox" layoutX="400.0" layoutY="21.0" prefHeight="37.0" prefWidth="170.0" stylesheets="@resources/css/font.css">
+               <styleClass>
+                  <String fx:value="text" />
+                  <String fx:value="maksupohja-choice-box" />
+               </styleClass></ChoiceBox>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="141.0" layoutY="2.0" prefHeight="44.0" prefWidth="135.0" styleClass="text" stylesheets="@resources/css/font.css" text="%makSaldoLabel" textFill="#ebecf0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="saldoTxt" layoutX="285.0" layoutY="2.0" prefHeight="45.0" prefWidth="278.0" styleClass="text" stylesheets="@resources/css/font.css" text="€ 1200" textFill="#ebecf0">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="141.0" layoutY="46.0" prefHeight="44.0" prefWidth="135.0" styleClass="text" stylesheets="@resources/css/font.css" text="%makSaajaIbanLabel" textFill="#ebecf0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ibanTxt" layoutX="283.0" layoutY="50.0" prefHeight="37.0" prefWidth="177.0" promptText="%makIbanHolder" styleClass="text" stylesheets="@resources/css/font.css">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="141.0" layoutY="93.0" prefHeight="44.0" prefWidth="135.0" styleClass="text" stylesheets="@resources/css/font.css" text="%makSaajaLabel" textFill="#ebecf0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nimiTxt" layoutX="283.0" layoutY="97.0" prefHeight="37.0" prefWidth="177.0" promptText="%makNimiHolder" styleClass="text" stylesheets="@resources/css/font.css">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="141.0" layoutY="140.0" prefHeight="44.0" prefWidth="135.0" styleClass="text" stylesheets="@resources/css/font.css" text="%makViiteLabel" textFill="#ebecf0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="viitenroTxt" layoutX="283.0" layoutY="144.0" prefHeight="37.0" prefWidth="177.0" promptText="%makViiteHolder" styleClass="text" stylesheets="@resources/css/font.css">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="141.0" layoutY="196.0" prefHeight="44.0" prefWidth="135.0" styleClass="text" stylesheets="@resources/css/font.css" text="%makViestiLabel" textFill="#ebecf0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="viestiTxt" layoutX="283.0" layoutY="191.0" prefHeight="55.0" prefWidth="176.0" promptText="%makViestiHolder" styleClass="text" stylesheets="@resources/css/font.css" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="141.0" layoutY="253.0" prefHeight="44.0" prefWidth="135.0" styleClass="text" stylesheets="@resources/css/font.css" text="%makEraLabel" textFill="#ebecf0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="141.0" layoutY="302.0" prefHeight="44.0" prefWidth="135.0" styleClass="text" stylesheets="@resources/css/font.css" text="%makMaaraLabel" textFill="#ebecf0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="maaraTxt" layoutX="283.0" layoutY="306.0" onKeyTyped="#muutaSaldoa" prefHeight="37.0" prefWidth="100.0" promptText="%makMaaraHolder" styleClass="text" stylesheets="@resources/css/font.css">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="141.0" layoutY="354.0" prefHeight="44.0" prefWidth="135.0" styleClass="text" stylesheets="@resources/css/font.css" text="%makMaksaLabel" textFill="#ebecf0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="pvTxt" layoutX="283.0" layoutY="256.0" prefHeight="37.0" prefWidth="176.0" promptText="%makEraHolder" showWeekNumbers="true" styleClass="text" stylesheets="@resources/css/font.css" />
+            <Slider fx:id="maksaBtn" layoutX="315.0" layoutY="368.0" nodeOrientation="LEFT_TO_RIGHT" onMouseReleased="#maksa" prefHeight="19.0" prefWidth="42.0" style="-fx-scale-x: 2.5; -fx-scale-y: 2.5;" />
+            <ChoiceBox fx:id="valuuttaBox" layoutX="393.0" layoutY="306.0" prefHeight="37.0" prefWidth="67.0" styleClass="text" stylesheets="@resources/css/font.css" />
+            <Group layoutX="500.0" layoutY="363.0">
+               <children>
+                  <ImageView fx:id="poistaBtn" fitHeight="40.0" fitWidth="25.0" layoutX="38.0" onMouseClicked="#poista" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/img/roskis.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="tallennaBtn" fitHeight="150.0" fitWidth="28.0" onMouseClicked="#pyydaMaksuPohjaNimi" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/img/save.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

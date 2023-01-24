@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" stylesheets="@resources/css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Etusivukontrolleri">
+   <bottom>
+      <AnchorPane fx:id="paneMain" prefHeight="136.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="ulosBtn" fitHeight="150.0" fitWidth="30.0" layoutX="532.0" layoutY="75.0" onMouseClicked="#kirjauduUlos" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/img/logout.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="43.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Group layoutX="179.0" layoutY="52.0">
+               <children>
+                  <Button fx:id="maksuBtn" contentDisplay="CENTER" layoutY="6.0" mnemonicParsing="false" onAction="#uusiMaksu" prefHeight="40.0" prefWidth="115.0" styleClass="text" stylesheets="@resources/css/font.css" text="%etuMaksuButton" />
+                  <Button fx:id="tilihistoriaBtn" contentDisplay="CENTER" layoutX="127.0" layoutY="6.0" mnemonicParsing="false" onAction="#tilihistoria" prefHeight="40.0" prefWidth="115.0" styleClass="text" stylesheets="@resources/css/font.css" text="%etuHistoriaButton" />
+                  <Button fx:id="kryptoBtn" contentDisplay="CENTER" layoutY="60.0" mnemonicParsing="false" onAction="#krypto" prefHeight="40.0" prefWidth="115.0" styleClass="text" stylesheets="@resources/css/font.css" text="%etuKryptoButton" />
+                  <Button fx:id="tiedotBtn" contentDisplay="CENTER" layoutX="127.0" layoutY="60.0" mnemonicParsing="false" onAction="#tiedot" prefHeight="40.0" prefWidth="115.0" styleClass="text" stylesheets="@resources/css/font.css" text="%etuTiedotButton" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutY="115.0" mnemonicParsing="false" onAction="#laina" prefHeight="40.0" prefWidth="115.0" styleClass="text" stylesheets="@resources/css/font.css" text="%etuLainaButton" textAlignment="CENTER" wrapText="true" />
+               </children>
+            </Group>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="184.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="saldoTxt" alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="89.0" prefHeight="80.0" prefWidth="490.0" styleClass="text" stylesheets="@resources/css/font.css" text=" € 1200" textAlignment="CENTER" textFill="#ebecf0">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="valuuttaBox" layoutX="267.0" layoutY="170.0" prefHeight="37.0" prefWidth="67.0" styleClass="text" stylesheets="@resources/css/font.css" />
+            <ComboBox fx:id="languageBox" layoutX="440.0" layoutY="30.0" prefHeight="37.0" prefWidth="130.0" promptText="%kieliBoxPrompt" styleClass="text" stylesheets="@resources/css/font.css" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

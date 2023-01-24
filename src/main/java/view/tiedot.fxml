@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" stylesheets="@resources/css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Kayttajatiedotkontrolleri">
+   <top>
+      <AnchorPane prefHeight="76.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="148.0" layoutY="21.0" prefHeight="35.0" prefWidth="304.0" styleClass="text" stylesheets="@resources/css/font.css" text="%omaOtsikkoLabel" textAlignment="CENTER" textFill="#ebecf0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="takaisinBtn" layoutX="30.0" layoutY="24.0" onMouseClicked="#palaaTakaisin" styleClass="text" stylesheets="@resources/css/font.css" text="❮" textFill="#ebecf0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Group layoutX="123.0" layoutY="30.0">
+               <children>
+                  <Label prefHeight="44.0" prefWidth="150.0" styleClass="text" stylesheets="@resources/css/font.css" text="%omaNimiLabel" textFill="#ebecf0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nimiTxt" disable="true" layoutX="145.0" layoutY="3.0" prefHeight="37.0" prefWidth="210.0" styleClass="text" stylesheets="@resources/css/font.css" text="Pekka Petelius">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutY="49.0" prefHeight="44.0" prefWidth="150.0" styleClass="text" stylesheets="@resources/css/font.css" text="%omaIbanLabel" textFill="#ebecf0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ibanTxt" disable="true" editable="false" layoutX="145.0" layoutY="52.0" prefHeight="37.0" prefWidth="210.0" styleClass="text" stylesheets="@resources/css/font.css" text="FIYY YYYY YYYY YY">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutY="94.0" prefHeight="50.0" prefWidth="140.0" styleClass="text" stylesheets="@resources/css/font.css" text="%omaPuhLabel" textFill="#ebecf0" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="puhTxt" layoutX="145.0" layoutY="100.0" prefHeight="37.0" prefWidth="210.0" styleClass="text" stylesheets="@resources/css/font.css" text="+358 40 000 0000">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutY="145.0" prefHeight="44.0" prefWidth="150.0" styleClass="text" stylesheets="@resources/css/font.css" text="%omaSpostiLabel" textFill="#ebecf0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="spostiTxt" layoutX="145.0" layoutY="148.0" prefHeight="37.0" prefWidth="210.0" styleClass="text" stylesheets="@resources/css/font.css" text="pekka.petelius@gmail.com">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutY="193.0" prefHeight="44.0" prefWidth="150.0" styleClass="text" stylesheets="@resources/css/font.css" text="%omaOsoiteLabel" textFill="#ebecf0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="osoiteTxt" layoutX="145.0" layoutY="196.0" prefHeight="37.0" prefWidth="210.0" styleClass="text" stylesheets="@resources/css/font.css" text="Testikatu 2">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutY="240.0" prefHeight="44.0" prefWidth="150.0" styleClass="text" stylesheets="@resources/css/font.css" text="%omaPostinumeroLabel" textFill="#ebecf0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="postinroTxt" layoutX="145.0" layoutY="243.0" prefHeight="37.0" prefWidth="210.0" styleClass="text" stylesheets="@resources/css/font.css" text="00380">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="tallennaBtn" layoutY="298.0" mnemonicParsing="false" onAction="#tallennaTiedot" prefHeight="32.0" prefWidth="80.0" styleClass="text" stylesheets="@resources/css/font.css" text="%omaTallennaButton" />
+               </children>
+            </Group>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

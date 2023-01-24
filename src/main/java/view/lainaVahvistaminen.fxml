@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" stylesheets="@resources/css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LainaVahvistusKontrolleri">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Group layoutX="172.0" layoutY="50.0">
+               <children>
+                  <Label fx:id="lainaMaksuaikaLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="193.0" layoutY="72.0" prefHeight="33.0" prefWidth="14.0" styleClass="text" stylesheets="@resources/css/font.css" text="12" textAlignment="CENTER" textFill="#ebecf0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lainaMaksuaikaLabel2" contentDisplay="CENTER" layoutY="72.0" prefHeight="33.0" prefWidth="180.0" styleClass="text" stylesheets="@resources/css/font.css" text="%laiMaksuAikaLabel" textAlignment="CENTER" textFill="#ebecf0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="laiKuukausiEraLabel2" contentDisplay="CENTER" layoutX="1.0" layoutY="105.0" prefHeight="33.0" prefWidth="180.0" styleClass="text" stylesheets="@resources/css/font.css" text="%laiKuukausiEraLabel" textAlignment="CENTER" textFill="#ebecf0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lainaKuukausiEraLabel" contentDisplay="CENTER" layoutX="196.0" layoutY="105.0" prefHeight="33.0" prefWidth="55.0" styleClass="text" stylesheets="@resources/css/font.css" text="3" textAlignment="CENTER" textFill="#ebecf0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lainaMaaraLabel2" contentDisplay="CENTER" layoutX="1.0" layoutY="39.0" prefHeight="33.0" prefWidth="180.0" styleClass="text" stylesheets="@resources/css/font.css" text="%laiVahMaaraLabel" textAlignment="CENTER" textFill="#ebecf0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lainaMaaraLabel" contentDisplay="CENTER" layoutX="196.0" layoutY="39.0" prefHeight="33.0" prefWidth="55.0" styleClass="text" stylesheets="@resources/css/font.css" text="3 €" textFill="#ebecf0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lainaMaaraLabel21" contentDisplay="CENTER" layoutX="1.0" prefHeight="33.0" prefWidth="269.0" styleClass="text" stylesheets="@resources/css/font.css" text="%laiTiedotLabel" textAlignment="CENTER" textFill="#ebecf0">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lainaMaaraLabel1" contentDisplay="CENTER" layoutX="210.0" layoutY="72.0" prefHeight="33.0" prefWidth="47.0" styleClass="text" stylesheets="@resources/css/font.css" text="%laiKuukausiLabel" textAlignment="CENTER" textFill="#ebecf0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Label fx:id="laiKuukausiEraLabel21" alignment="CENTER" contentDisplay="CENTER" layoutX="109.0" layoutY="216.0" lineSpacing="1.0" prefHeight="38.0" prefWidth="386.0" styleClass="text" stylesheets="@resources/css/font.css" text="%laiTakaisinMaksuLabel" textAlignment="CENTER" textFill="#ebecf0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="161.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lainaOtsikkoLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="126.0" layoutY="10.0" prefHeight="58.0" prefWidth="348.0" styleClass="text" stylesheets="@resources/css/font.css" text="%laiVahOtsikkoLabel" textAlignment="CENTER" textFill="#ebecf0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="takaisinBtn" layoutX="547.0" layoutY="24.0" onMouseClicked="#palaaTakaisin" styleClass="text" stylesheets="@resources/css/font.css" text="🞬" textFill="#ebecf0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="265.0" layoutY="103.0" prefHeight="60.0" prefWidth="70.0" style="-fx-border-color: #ebecf0; -fx-border-insets: 1; -fx-border-radius: 100; -fx-border-width: 5;" text="✓" textAlignment="CENTER" textFill="#ebecf0">
+               <font>
+                  <Font size="40.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
